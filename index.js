@@ -22,4 +22,4 @@ app.post("/", (req,res) => {
 app.listen(port, () => {
     console.log(`Server ready listening on ${port}`);
 });
-console.log(cool());
+//console.log(cool());
