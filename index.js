@@ -9,7 +9,7 @@ app.use("/", express.static(path.join(__dirname,"public")));
 
 app.get("/", (req,res) => {
     //response.send(cool());
-    res.send("Hello from this tiny server"));
+    res.send("Hello from this tiny server");
    //console.log("New reqsuest has arrived");
 });
 
