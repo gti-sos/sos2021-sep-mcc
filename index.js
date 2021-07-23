@@ -23,7 +23,9 @@ app.get("/", (req,res) => {
    console.log("New request has d");
 });
 
-/*app.get("/info/psychology_stats", (request,response)=>{
+/* F02
+
+app.get("/info/psychology_stats", (request,response)=>{
 
     response.send(`<!DOCTYPE html>
     <html>
@@ -103,7 +105,7 @@ app.get("/", (req,res) => {
         );
 
 });	*/
-app.get(BASE_API_PATH + "/psychology-stats/loadInitialData", (request, res) => {
+app.get(BASE_API_PATH + "/psychology-stats/loadInitialData", (req, res) => {
      psychology_stats_data = [
         {
             "country": 'Spain_Andalucia',
@@ -152,7 +154,7 @@ app.get(BASE_API_PATH + "/psychology-stats/loadInitialData", (request, res) => {
     console.log(`Loaded Initial Data: <${JSON.stringify(psychology_stats_data, null, 2)}>`);
     return res.sendStatus(200);
 })
-app.get(BASE_API_PATH + "/psychology-stats", (request,res)=>{
+app.get(BASE_API_PATH + "/psychology-stats", (req,res)=>{
     if (psychology_stats_data.length != 0) {
         console.log(`psychology_stats requested`);
       return res.send(JSON.stringify(psychology_stats_data, null, 2));  
@@ -162,3 +164,86 @@ app.get(BASE_API_PATH + "/psychology-stats", (request,res)=>{
     }
      return res.sendStatus(200);
   });
+
+  app.post(BASE_API_PATH + "/psychology-stats", (req, res) => {
+	var data = req.body;
+	psychology_stats_data.push(data);
+	console.log(`new data pushed: <${JSON.stringify(psychology_stats_data, null, 2)}>`);
+	res.sendStatus(201);
+});
+
+app.get(BASE_API_PATH + "/psychology-stats/:country/:year", (req, res) => {
+	var country = req.params.country;
+	var year = parseInt(req.params.year);
+
+	console.log(`GET stat by country: <${country}> and year: <${year}>`);
+	for (var stat of psychology_stats_data) {
+		if (stat.country === country && stat.year === year) {
+			return res.status(200).json(stat);
+		}
+	}
+
+	return res.sendStatus(404);
+});
+
+
+app.delete(BASE_API_PATH + "/psychology-stats/:country/:year", (req, res) => {
+	var country = req.params.country;
+	var year = parseInt(req.body.year);
+
+	console.log(`DELETE by country <${country}> and year: <${year}>`);
+
+	for (var i = 0; i < psychology_stats_data.length; i++) {
+		if (psychology_stats_data[i]["country"] === country && psychology_stats_data[i]["year"] === year) {
+			psychology_stats_data.splice(i, 1);
+			return res.sendStatus(200);
+		}
+	}
+
+	return res.sendStatus(404);
+});
+
+
+app.put(BASE_API_PATH + "/psychology-stats/:country/:year", (req, res) => {
+	var country = req.params.country;
+	var year = parseInt(req.params.year);
+	var newDatapsychology = req.body;
+
+	console.log(`PUT ${newDatapsychology.country} OVER ${country} `);
+	console.log(`PUT ${newDatapsychology.year} OVER ${year} `);
+
+	if (psychology_stats_data.length == 0) {
+		console.log("No Válido")
+		return res.sendStatus(404);
+	} else {
+		for (var i = 0; i < psychology_stats_data.length; i++) {
+			var stat = psychology_stats_data[i];
+			if (stat.country === country && stat.year === year) {
+				psychology_stats_data[i] = newDatapsychology;
+				return res.send('PUT success');
+			}
+		}
+	}
+});
+
+
+app.post(BASE_API_PATH + "/psychology-stats/:country/:date", (req, res) => {
+	console.log("POST no valido/encontrado");
+	return res.sendStatus(405);
+
+});
+
+
+app.put(BASE_API_PATH + "/psychology-stats", (req, res) => {
+	console.log("PUT no valido/encontrado");
+	return res.sendStatus(405);
+
+});
+
+
+app.delete(BASE_API_PATH + "/psychology-stats", (req, res) => {
+	psychology_stats_data.length = 0;
+	console.log('psychology_stats deleted');
+	return res.sendStatus(200);
+
+})
