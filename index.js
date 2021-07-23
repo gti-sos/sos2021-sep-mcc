@@ -35,11 +35,11 @@ app.get("/info/psychology_stats", (request,response)=>{
              </br>
              <table class="default" style="width:100%">
             <tr>
-                <th>country</td>
-                <th>year</td>
-                <th>psy_women</td>
-                <th>psy_men</td>
-                <th>psy_population</td>
+                <th>country</th>
+                <th>year</th>
+                <th>psy_women</th>
+                <th>psy_men</th>
+                <th>psy_population</th>
             </tr>
             <tr>
                 <td>Spain_Andalucia</td>
