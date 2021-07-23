@@ -20,7 +20,7 @@ app.get("/info/psychology_stats", (request,response)=>{
         <head>
             <title>psychology_stats</title>
             <style>
-                table, tr, td {
+                table, tr, td , th{
                     border: 1px solid black;
                     border-collapse: collapse;
                 }
@@ -35,11 +35,11 @@ app.get("/info/psychology_stats", (request,response)=>{
              </br>
              <table class="default" style="width:100%">
             <tr>
-                <td>country</td>
-                <td>year</td>
-                <td>psy_women</td>
-                <td>psy_men</td>
-                <td>psy_population</td>
+                <th>country</td>
+                <th>year</td>
+                <th>psy_women</td>
+                <th>psy_men</td>
+                <th>psy_population</td>
             </tr>
             <tr>
                 <td>Spain_Andalucia</td>
