@@ -9,10 +9,14 @@ var BASE_API_PATH = "/api/v1";
 
 var port = (process.env.PORT || 10000);
 
-var datos =[];
+var psychology_stats_data =[];
 
 app.use("/", express.static(path.join(__dirname,"public")));
 
+app.listen(port, () => {
+    console.log(`Server ready listening on ${port}`);
+});
+//console.log(cool());
 app.get("/", (req,res) => {
     //response.send(cool());
     res.send("Hello from this tiny server");
@@ -100,7 +104,7 @@ app.get("/", (req,res) => {
 
 });	*/
 app.get(BASE_API_PATH + "/psychology-stats/loadInitialData", (request, res) => {
-    var psychology_stats_data = [
+     psychology_stats_data = [
         {
             "country": 'Spain_Andalucia',
             "year": 2017,
@@ -144,22 +148,17 @@ app.get(BASE_API_PATH + "/psychology-stats/loadInitialData", (request, res) => {
             "psychology_population": 3
         }
     ];
-    datos.push(psychology_stats_data);
+    
     console.log(`Loaded Initial Data: <${JSON.stringify(psychology_stats_data, null, 2)}>`);
     return res.sendStatus(200);
 })
-app.get(BASE_API_PATH + "/psychology-stats", (request,response)=>{
-    if (datos.length != 0) {
-      
-      return res.send(JSON.stringify(datos, null, 2));  
+app.get(BASE_API_PATH + "/psychology-stats", (request,res)=>{
+    if (psychology_stats_data.length != 0) {
+        console.log(`psychology_stats requested`);
+      return res.send(JSON.stringify(psychology_stats_data, null, 2));  
     } else {
       console.log("No data found");
       return res.sendStatus(404);
     }
+     return res.sendStatus(200);
   });
-
-
-app.listen(port, () => {
-    console.log(`Server ready listening on ${port}`);
-});
-//console.log(cool());
