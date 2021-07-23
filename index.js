@@ -4,9 +4,12 @@ var path = require("path");
 var app = express();
 var bodyParser = require("body-parser");
 app.use(bodyParser.json());
+app.use(express.json());
 var BASE_API_PATH = "/api/v1"; 
-//var BASE_API = "https://sos2021-sep-mcc.herokuapp.com/";
+
 var port = (process.env.PORT || 10000);
+
+var datos =[];
 
 app.use("/", express.static(path.join(__dirname,"public")));
 
@@ -141,21 +144,20 @@ app.get(BASE_API_PATH + "/psychology-stats/loadInitialData", (request, res) => {
             "psychology_population": 3
         }
     ];
-
+    datos.push(psychology_stats_data);
     console.log(`Loaded Initial Data: <${JSON.stringify(psychology_stats_data, null, 2)}>`);
     return res.sendStatus(200);
 })
+app.get(BASE_API_PATH + "/psychology-stats", (request,response)=>{
+    if (datos.length != 0) {
+      
+      return res.send(JSON.stringify(datos, null, 2));  
+    } else {
+      console.log("No data found");
+      return res.sendStatus(404);
+    }
+  });
 
-
-app.get(BASE_API_PATH + "/psychology_stats", (request,response)=>{
-
-
-});	
-app.post("/", (req,res) => {
-  
-    res.send("Hello from this tiny server");
-  
-});
 
 app.listen(port, () => {
     console.log(`Server ready listening on ${port}`);
