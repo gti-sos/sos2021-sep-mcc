@@ -9,5 +9,6 @@
 - URL: [http://sos2021-sep-mcc.herokuapp.com](http//sos2021-11.herokuapp.com)
 -  APIs: [https://sos2021-sep-mcc.herokuapp.com/api/v1/psychology-stats] (API de psychology-stats)
 - Postman: [https://documenter.getpostman.com/view/14948136/TzsZrUB2] (Postman de Psychology v1)
+- Postman:[https://documenter.getpostman.com/view/14948136/TzsZroCS](Postman D01 Psychology)
 
 
