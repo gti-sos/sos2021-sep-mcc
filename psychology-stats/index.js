@@ -1,6 +1,4 @@
-module.exports.register = (app, BASE_API_PATH) => { 
 
-};
 //var cool = require("cool-ascii-faces");
 var express = require("express");
 var path = require("path");
@@ -12,15 +10,13 @@ app.use(express.json());
 
 var BASE_API_PATH = "/api/v1"; 
 
-var port = (process.env.PORT || 10000);
+
 
 var psychology_stats_data =[];
 
 app.use("/", express.static(path.join(__dirname,"public")));
 
-app.listen(port, () => {
-    console.log(`Server ready listening on ${port}`);
-});
+
 //console.log(cool());
 app.get("/", (req,res) => {
     //response.send(cool());
@@ -112,6 +108,9 @@ app.get("/info/psychology_stats", (request,response)=>{
         );
 
 });	*/
+module.exports.register = (app, BASE_API_PATH) => { 
+
+
 app.get(BASE_API_PATH + "/psychology-stats/loadInitialData", (req, res) => {
     psychology_stats_data = [
        {
@@ -253,4 +252,6 @@ app.delete(BASE_API_PATH + "/psychology-stats", (req, res) => {
    console.log('psychology_stats deleted');
    return res.sendStatus(200);
 
-})
+});
+
+};
