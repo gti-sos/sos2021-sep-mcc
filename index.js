@@ -17,7 +17,8 @@ app.use(express.json());
 psychology_stats_api.register(app, BASE_API_PATH);
 
 var path = require("path");
-var app = express();
+
+app.use("/", express.static(path.join(__dirname,"public")));
 
 app.listen(port, () => {
     console.log(`Server ready listening on ${port}`);

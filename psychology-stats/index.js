@@ -2,28 +2,15 @@
 //var cool = require("cool-ascii-faces");
 var express = require("express");
 var path = require("path");
-var app = express();
+
 var bodyParser = require("body-parser");
+var BASE_API_PATH = "/api/v1"; 
+var app = express();
 
 app.use(bodyParser.json());
 app.use(express.json());
 
-var BASE_API_PATH = "/api/v1"; 
-
-
-
-var psychology_stats_data =[];
-
-app.use("/", express.static(path.join(__dirname,"public")));
-
-
-//console.log(cool());
-app.get("/", (req,res) => {
-    //response.send(cool());
-    res.send("Hello from this tiny server");
-   console.log("New request has d");
-});
-
+//app.use("/", express.static(path.join(__dirname,"public")));
 
 
 /* F02
@@ -110,6 +97,7 @@ app.get("/info/psychology_stats", (request,response)=>{
 });	*/
 module.exports.register = (app, BASE_API_PATH) => { 
 
+    var psychology_stats_data =[];
 
 app.get(BASE_API_PATH + "/psychology-stats/loadInitialData", (req, res) => {
     psychology_stats_data = [
