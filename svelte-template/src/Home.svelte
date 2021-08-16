@@ -72,7 +72,7 @@
                                             Psicología
                                             </h3>
                                             <p class="text-white-50 mb-0">Psychology-Stats</p>
-                                            <br /><a href="#/anxiety_stats"
+                                            <br /><a href="#/psychology_stats"
                                                 ><button type="button" class="btn btn-primary"
                                                     >Aquí</button
                                                 ></a

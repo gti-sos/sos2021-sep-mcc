@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Router from "svelte-spa-router";
 	import NotFound from "./NotFound.svelte";
 	import Home from "./Home.svelte";
 	import psychology_stats from "./psychology_stats_API/App.svelte";
@@ -12,6 +13,8 @@
 
 <main>
 	<h1>SOS2021-sep-mcc</h1>
+	<Router {routes} />
+	
 </main>
 
 <style>
