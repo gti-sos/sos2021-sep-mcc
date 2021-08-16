@@ -1,10 +1,17 @@
-<script>
-	export let name;
+<script lang="ts">
+	import NotFound from "./NotFound.svelte";
+	import Home from "./Home.svelte";
+	import psychology_stats from "./psychology_stats_API/App.svelte";
+	const routes = {
+		"/": Home,
+		"/psychology_stats": psychology_stats,
+		"*": NotFound,
+	};
 </script>
 
+
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>SOS2021-sep-mcc</h1>
 </main>
 
 <style>
