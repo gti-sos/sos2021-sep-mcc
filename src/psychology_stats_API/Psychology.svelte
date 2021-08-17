@@ -5,8 +5,7 @@
     let psychologystats = [];
     async function loadStats() {
         console.log("Loading data...");
-        const cargaDeDatos = await fetch(
-            API_PSYCHOLOGY_STATS + "/loadInitialData"
+        const cargaDeDatos = await fetch("/api/v1/psychology-stats/loadInitialData"
         );
         dataCharged = true;
         if (cargaDeDatos.ok) {

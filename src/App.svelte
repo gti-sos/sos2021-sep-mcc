@@ -1,18 +1,18 @@
 <script lang="ts">
-	import Router from "svelte-spa-router";
+	export let name;
+	import Router from 'svelte-spa-router';
 	import NotFound from "./NotFound.svelte";
 	import Home from "./Home.svelte";
 	import psychology_stats from "./psychology_stats_API/App.svelte";
 	const routes = {
 		"/": Home,
-		"/psychology_stats": psychology_stats,
+		"/psychology-stats": psychology_stats,
 		"*": NotFound,
 	};
 </script>
 
 
 <main>
-	<h1>SOS2021-sep-mcc</h1>
 	<Router {routes} />
 	
 </main>
