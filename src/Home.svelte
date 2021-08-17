@@ -6,7 +6,7 @@
                 class="row h-100 align-items-center justify-content-center text-center"
             >
                 <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase text-black font-weight-bold">
+                    <h1 class="text-uppercase text-primary font-weight-bold">
                         sos2021-sep-mcc
                     </h1>
                     <hr class="divider my-4" />
@@ -28,9 +28,9 @@
 
     <!-- Información -->
     <section class="page-section" id="informacion">
-        <div class="jumbotron bg-primary">
+        <div class="jumbotron bg-info">
             <div class="container">
-                <h2 class="text-center text-white mt-0">
+                <h2 class="text-center text-primary mt-0">
                     Información de la API
                 </h2>
                 <hr class="my-4" />
@@ -58,7 +58,7 @@
             </section>
 
                     <section class="page-section" id="apis">
-                        <div class="jumbotron bg-dark">
+                        <div class="jumbotron bg-primary">
                             <div class="container">
                                 <h2 class="text-center text-white mt-0">Acceso a la API</h2>
                                 <hr class="divider my-4" />
@@ -73,7 +73,7 @@
                                             </h3>
                                             <p class="text-white-50 mb-0">Psychology-Stats</p>
                                             <br /><a href="#/psychology-stats"
-                                                ><button type="button" class="btn btn-primary"
+                                                ><button type="button" class="btn btn-light"
                                                     >Aquí</button
                                                 ></a
                                             >
@@ -84,22 +84,22 @@
                         </section>
 
                                     <section class="page-section" id="equipo">
-                                        <div class="jumbotron bg-dark">
+                                        <div class="jumbotron bg-muted">
                                             <div class="container">
-                                                <h2 class="text-center text-white mt-0">Equipo</h2>
+                                                <h2 class="text-center text-primary mt-0">Equipo</h2>
                                                 <hr class="divider dark my-4" />
                                                 <div class="row">
                                                     <div class="col-lg-3 col-md-6 text-center">
                                                         <div class="mt-5">
                                                             <i class="fas fa-4x fa-user text-white mb-4" />
-                                                            <h3 class="h4 mb-2 text-white">
+                                                            <h3 class="h4 mb-2 text-info">
                                                                 Miriam Campano Crespo
                                                             </h3>
-                                                            <p class="text-muted mb-0">
+                                                            <p class="text-info mb-0">
                                                                 Creador de la API de Psicología
                                                             </p>
                                                             <br /><a href="https://github.com/Mirishya"
-                                                                ><button type="button" class="btn btn-primary"
+                                                                ><button type="button" class="btn btn-light"
                                                                     >Github</button
                                                                 ></a
                                                             >
