@@ -44,16 +44,16 @@
 <main>
     <div>
         {#if dataCharged}
-            <Button style="background-color: darkgreen;" disabled>
+            <Button style="background-color: #8C17BD;" disabled>
                 Cargar datos base</Button
             >
         {:else}
-            <Button style="background-color: darkgreen;" on:click={loadStats}>
+            <Button style="background-color: #8C17BD;" on:click={loadStats}>
                 Carga de datos</Button
             >
         {/if}
-        <Button style="background-color: darkgray" on:click={deleteStats}>
-            Elimininación de datos</Button
+        <Button style="background-color: #8C929D" on:click={deleteStats}>
+            Eliminar datos</Button
         >
     </div>
 
@@ -84,7 +84,7 @@
         <a href="/">Página Principal</a>
     {:else}
         <br />
-        <p style="text-align: center; background-color: antiquewhite;">
+        <p style="text-align: center">
             Si desea ver los datos únicamente presione el botón, ¡gracias!
         </p>
         <a href="/">Página Principal</a>

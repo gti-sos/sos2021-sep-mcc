@@ -18,7 +18,7 @@
                         ></a
                     >
                     <br /><br />
-                    <p class="text-white-75 font-weight-light mb-5">
+                    <p class="text-white-75 font-weight-dark mb-5">
                         Los datos aquí mostrados es la comparativa de Comunidades Autónomas en España de las cuales son el porcentaje de hombres y mujeres que acuden o han acudido alguna vez al Psicólogo.
                     </p>
                 </div>
@@ -41,7 +41,7 @@
                                 class="fas fa-4x fa-user-injured text-white mb-4"
                             />
                             <h3 class="h4 mb-2 text-white">
-                                Psicología
+                                Postman Psicología
                             </h3>
                             <p class="text-white-50 mb-0">Psychology-stats</p>
                             <br /><a
