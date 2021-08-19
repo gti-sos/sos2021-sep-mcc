@@ -2,7 +2,7 @@ var express = require("express");
 
 var bodyParser = require("body-parser");
 
-var psychology_stats_api = require("./psychology-stats");
+var psychology_stats_api = require("./src/back/psychology-stats");
 
 
 var port = (process.env.PORT || 10000);

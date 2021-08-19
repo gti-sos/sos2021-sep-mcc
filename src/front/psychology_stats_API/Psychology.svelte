@@ -56,10 +56,12 @@
             Eliminar datos</Button
         >
     </div>
+   
 
     {#if psychologystats.length != 0}
         <br />
-        <Table bordered style="text-align: center;">
+          
+        <Table bordered style="text-align: center;" bgcolor="cyan">
             <thead>
                 <tr>
                     <th>País</th>
@@ -80,7 +82,9 @@
                     </tr>
                 {/each}
             </tbody>
+        
         </Table>
+    
         <a href="/">Página Principal</a>
     {:else}
         <br />

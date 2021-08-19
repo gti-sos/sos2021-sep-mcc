@@ -3,9 +3,12 @@
 	import Router from 'svelte-spa-router';
 	import NotFound from "./NotFound.svelte";
 	import Home from "./Home.svelte";
-	import psychology_stats from "./psychology_stats_API/App.svelte";
+	import psychology_stats from "./front/psychology_stats_API/App.svelte";
+	import info from "./Info.svelte";
+
 	const routes = {
 		"/": Home,
+		"/info": info,
 		"/psychology-stats": psychology_stats,
 		"*": NotFound,
 	};
@@ -13,7 +16,7 @@
 
 
 <main>
-	<Router {routes} />
+	<Router {routes}> </Router>
 	
 </main>
 
