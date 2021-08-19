@@ -2,13 +2,15 @@
 	import Router from 'svelte-spa-router';
 	import Home from "./Home.svelte";
 	import info from "./Info.svelte";
-	import psychology_stats from "./front/psychology_stats_API/App.svelte";
+	import psychology_stats from "./front/psychology_stats_API/Psychology.svelte";
+	import edit_psychology_stats from "./front/psychology_stats_API/PsychologyEdit.svelte";
 	import NotFound from "./NotFound.svelte";
 
 	const routes = {
 		"/": Home,
 		"/info": info,
 		"/psychology-stats": psychology_stats,
+		"/psychology-stats/:country/:year": edit_psychology_stats,
 		"*": NotFound,
 	};
 </script>
