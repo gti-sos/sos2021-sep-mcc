@@ -1,10 +1,9 @@
 <script lang="ts">
-	export let name;
 	import Router from 'svelte-spa-router';
-	import NotFound from "./NotFound.svelte";
 	import Home from "./Home.svelte";
-	import psychology_stats from "./front/psychology_stats_API/App.svelte";
 	import info from "./Info.svelte";
+	import psychology_stats from "./front/psychology_stats_API/App.svelte";
+	import NotFound from "./NotFound.svelte";
 
 	const routes = {
 		"/": Home,
@@ -16,7 +15,7 @@
 
 
 <main>
-	<Router {routes}> </Router>
+	<Router {routes} /> 
 	
 </main>
 
@@ -28,12 +27,12 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	/*h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
-	}
+	}*/
 
 	@media (min-width: 640px) {
 		main {
