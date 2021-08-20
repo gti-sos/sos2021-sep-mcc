@@ -226,6 +226,10 @@
                                 outline
                                 style= "background-color: red; margin-right: 10px;"
                                 color="red"
+
+
+
+                                
                                 on:click={() =>
                                     deletepsychologyStatsPerYear(stat.country, stat.year)}
                             >
