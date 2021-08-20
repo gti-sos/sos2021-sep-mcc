@@ -19,7 +19,10 @@
                     >
                     <br /><br />
                     <p class="text-white-75 font-weight-dark mb-5">
-                        Los datos aquí mostrados es la comparativa de Comunidades Autónomas en España de las cuales son el porcentaje de hombres y mujeres que acuden o han acudido alguna vez al Psicólogo.
+                        Los datos aquí mostrados es la comparativa de
+                        Comunidades Autónomas en España de las cuales son el
+                        porcentaje de hombres y mujeres que acuden o han acudido
+                        alguna vez al Psicólogo.
                     </p>
                 </div>
             </div>
@@ -50,67 +53,62 @@
                                     >Postman</button
                                 ></a
                             >
-
                         </div>
                     </div>
                 </div>
             </div>
-            </section>
+        </div>
+    </section>
 
-                    <section class="page-section" id="apis">
-                        <div class="jumbotron bg-primary">
-                            <div class="container">
-                                <h2 class="text-center text-white mt-0">Acceso a la API</h2>
-                                <hr class="divider my-4" />
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 text-center">
-                                        <div class="mt-5">
-                                            <i
-                                                class="fas fa-4x fa-user-injured text-white mb-4"
-                                            />
-                                            <h3 class="h4 mb-2 text-white">
-                                            Psicología
-                                            </h3>
-                                            <p class="text-white-50 mb-0">Psychology-Stats</p>
-                                            <br /><a href="#/psychology-stats"
-                                                ><button type="button" class="btn btn-light"
-                                                    >Aquí</button
-                                                ></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+    <section class="page-section" id="apis">
+        <div class="jumbotron bg-primary">
+            <div class="container">
+                <h2 class="text-center text-white mt-0">Acceso a la API</h2>
+                <hr class="divider my-4" />
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i
+                                class="fas fa-4x fa-user-injured text-white mb-4"
+                            />
+                            <h3 class="h4 mb-2 text-white">Psicología</h3>
+                            <p class="text-white-50 mb-0">Psychology-Stats</p>
+                            <br /><a href="#/psychology-stats"
+                                ><button type="button" class="btn btn-light"
+                                    >Aquí</button
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                    <section class="page-section" id="equipo">
-                                        <div class="jumbotron bg-muted">
-                                            <div class="container">
-                                                <h2 class="text-center text-primary mt-0">Equipo</h2>
-                                                <hr class="divider dark my-4" />
-                                                <div class="row">
-                                                    <div class="col-lg-3 col-md-6 text-center">
-                                                        <div class="mt-5">
-                                                            <i class="fas fa-4x fa-user text-white mb-4" />
-                                                            <h3 class="h4 mb-2 text-info">
-                                                                Miriam Campano Crespo
-                                                            </h3>
-                                                            <p class="text-info mb-0">
-                                                                Creador de la API de Psicología
-                                                            </p>
-                                                            <br /><a href="https://github.com/Mirishya"
-                                                                ><button type="button" class="btn btn-light"
-                                                                    >Github</button
-                                                                ></a
-                                                            >
-                                                        </div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
+    <section class="page-section" id="equipo">
+        <div class="jumbotron bg-muted">
+            <div class="container">
+                <h2 class="text-center text-primary mt-0">Equipo</h2>
+                <hr class="divider dark my-4" />
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-user text-white mb-4" />
+                            <h3 class="h4 mb-2 text-info">
+                                Miriam Campano Crespo
+                            </h3>
+                            <p class="text-info mb-0">
+                                Creador de la API de Psicología
+                            </p>
+                            <br /><a href="https://github.com/Mirishya"
+                                ><button type="button" class="btn btn-light"
+                                    >Github</button
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
-
-
-
-

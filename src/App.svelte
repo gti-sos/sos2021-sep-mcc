@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Router from 'svelte-spa-router';
+	import Router from "svelte-spa-router";
 	import Home from "./Home.svelte";
 	import info from "./Info.svelte";
 	import psychology_stats from "./front/psychology_stats_API/Psychology.svelte";
@@ -15,10 +15,8 @@
 	};
 </script>
 
-
 <main>
-	<Router {routes} /> 
-	
+	<Router {routes} />
 </main>
 
 <style>

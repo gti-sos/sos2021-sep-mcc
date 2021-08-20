@@ -26,7 +26,8 @@
             updatedYear = psychologyStat.year;
             updatedPsychologyMen = psychologyStat["psychology_men"];
             updatedPsychologyWomen = psychologyStat["psychology_women"];
-            updatedPsychologyPopulation = psychologyStat["psychology_population"];
+            updatedPsychologyPopulation =
+                psychologyStat["psychology_population"];
             console.log("Received data.");
         } else if (res.status == 404) {
             errorMsg = "No se encuentra el dato a editar.";
@@ -72,8 +73,10 @@
 <main>
     <h2>Editar dato</h2>
     <div id="update">
-        <Table bordered style="text-align: center;" bgcolor="cyan">
-            <thead>
+        <Table bordered style="text-align: center;">
+            <thead
+                style="background:linear-gradient(90deg, rgba(233,233,246,1) 0%, rgba(56,216,217,1) 40%, rgba(0,61,255,1) 100%);"
+            >
                 <tr>
                     <th>País</th>
                     <th>Año</th>
@@ -122,7 +125,7 @@
                 </tr>
             </tbody>
         </Table>
-        <Button  color="primary" on:click={pop}>Volver</Button>
+        <Button color="info" on:click={pop}>Volver</Button>
     </div>
 
     {#if errorMsg}
