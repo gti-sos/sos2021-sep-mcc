@@ -75,10 +75,10 @@
                     </h2>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
 
-                    <a href="/#/info">
+                    <a href="/#/analytics">
                         <button type="button" class="btn btn-warning">General</button>
                     </a>
-                    <a href="/#/psychology-stats">
+                    <a href="/#/analytics/psychology-chart">
                         <button type="button" class="btn btn-secondary">Psicología</button>
                     </a>
                     <a href="/#/info">

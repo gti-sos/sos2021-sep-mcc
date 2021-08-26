@@ -5,12 +5,14 @@
 	import psychology_stats from "./front/psychology_stats_API/Psychology.svelte";
 	import edit_psychology_stats from "./front/psychology_stats_API/PsychologyEdit.svelte";
 	import NotFound from "./NotFound.svelte";
+	import psychology_chart from "./front/psychology_stats_API/PsychologyChart.svelte";
 
 	const routes = {
 		"/": Home,
 		"/info": info,
 		"/psychology-stats": psychology_stats,
 		"/psychology-stats/:country/:year": edit_psychology_stats,
+		"/analytics/psychology-chart": psychology_chart,
 		"*": NotFound,
 	};
 </script>

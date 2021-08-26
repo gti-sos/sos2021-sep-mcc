@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import { pop } from "svelte-spa-router";
     import { Button, Table } from "sveltestrap";
-    const API_PSYCHOLOGY_STATS = "/api/v1/psychology-stats"; //tiene que llamar a la API para tratar los datos
+    const API_PSYCHOLOGY_STATS = "/api/v2/psychology-stats"; //tiene que llamar a la API para tratar los datos
     export let params = {};
     let psychologyStat = {};
     let updatedCountry = "";

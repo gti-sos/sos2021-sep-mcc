@@ -34,7 +34,7 @@
     onMount(getpsychology);
 
     async function getpsychologyCountryYear() {
-        const res = await fetch("/api/v1/psychology-stats");
+        const res = await fetch("/api/v2/psychology-stats");
         if (res.ok) {
             const json = await res.json();
             countries = json.map((c) => {
@@ -53,13 +53,13 @@
     async function getpsychology() {
         console.log("Fetching psychology_stats...");
         const res = await fetch(
-            "/api/v1/psychology-stats?offset=" +
+            "/api/v2/psychology-stats?offset=" +
                 elementPage * offset +
                 "&limit=" +
                 elementPage
         );
         const nextPage = await fetch(
-            "/api/v1/psychology-stats?offset=" +
+            "/api/v2/psychology-stats?offset=" +
                 elementPage * (offset + 1) +
                 "&limit=" +
                 elementPage
@@ -96,7 +96,7 @@
             errorMsg =
                 "No puede introducir campos en blanco o campos que no sean numéricos";
         } else {
-            const res = await fetch("/api/v1/psychology-stats", {
+            const res = await fetch("/api/v2/psychology-stats", {
                 method: "POST",
                 body: JSON.stringify(newPsychology),
                 headers: {
@@ -118,7 +118,7 @@
 
     async function deletepsychology(country, year) {
         const res = await fetch(
-            "/api/v1/psychology-stats/" + country + "/" + year,
+            "/api/v2/psychology-stats/" + country + "/" + year,
             {
                 method: "DELETE",
             }
@@ -130,7 +130,7 @@
         errorMsg = false;
     }
     async function deletepsychologyData() {
-        const res = await fetch("/api/v1/psychology-stats", {
+        const res = await fetch("/api/v2/psychology-stats", {
             method: "DELETE",
         }).then(function (res) {
             getpsychology();
@@ -142,7 +142,7 @@
 
     async function loadInitialDatapsychology() {
         const res = await fetch(
-            "/api/v1/psychology-stats/loadInitialData"
+            "/api/v2/psychology-stats/loadInitialData"
         ).then(function (res) {
             getpsychology();
         });
@@ -151,7 +151,7 @@
     }
     // Búsqueda
     async function searchpsychology(country, year) {
-        var url = "/api/v1/psychology-stats";
+        var url = "/api/v2/psychology-stats";
         if (country != "" && year != "") {
             url = url + "?year=" + year + "&country=" + country;
         } else if (country != "" && year == "") {
