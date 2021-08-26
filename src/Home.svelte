@@ -9,6 +9,7 @@
                     <h1 class="text-uppercase text-primary font-weight-bold">
                         sos2021-sep-mcc
                     </h1>
+                
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
@@ -64,6 +65,26 @@
         <div class="jumbotron bg-primary">
             <div class="container">
                 <h2 class="text-center text-white mt-0">Acceso a la API</h2>
+
+                <br>
+            
+                <div>
+
+                    <h2 class="text-center text-black mt-0">
+                        Vistas analíticas
+                    </h2>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+
+                    <a href="/#/info">
+                        <button type="button" class="btn btn-warning">General</button>
+                    </a>
+                    <a href="/#/psychology-stats">
+                        <button type="button" class="btn btn-secondary">Psicología</button>
+                    </a>
+                    
+
+                </div>
+                    </div>
                 <hr class="divider my-4" />
                 <div class="row">
                     <div class="col-lg-3 col-md-6 text-center">
