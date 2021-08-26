@@ -15,10 +15,13 @@ var app = express();
 app.use(bodyParser.json());
 app.use(express.json());
 
-// Versión v1    psychology_stats_api.register(app, BASE_API_PATH);
+// Versión v1    
+
 var psychology_stats_api = require("./src/back/psychology-stats/v2");
+var psychology_stats_api_v1 = require("./src/back/psychology-stats/v1");
 
 psychology_stats_api.register(app, BASE_API_PATH_v2);
+psychology_stats_api_v1.register(app, BASE_API_PATH);
 
 var path = require("path");
 

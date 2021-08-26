@@ -81,6 +81,9 @@
                     <a href="/#/psychology-stats">
                         <button type="button" class="btn btn-secondary">Psicología</button>
                     </a>
+                    <a href="/#/info">
+                        <button type="button" class="btn btn-danger">Información</button>
+                    </a>
                     
 
                 </div>
