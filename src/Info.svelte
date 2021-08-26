@@ -35,14 +35,14 @@
                 </li>
                 <li>
                     <b
-                        >API de psychology-stats desarrollado por Miriam Campano
+                        >API V2 psychology-stats desarrollado por Miriam Campano
                         Crespo:</b
                     >
                     <ul>
                         <li>
                             <a
-                                href="https://sos2021-sep-mcc.herokuapp.com/api/v1/psychology-stats/"
-                                >https://sos2021-sep-mcc.herokuapp.com/api/v1/psychology-stats/</a
+                                href="https://sos2021-sep-mcc.herokuapp.com/api/v2/psychology-stats/"
+                                >https://sos2021-sep-mcc.herokuapp.com/api/v2/psychology-stats/</a
                             >
                         </li>
 
@@ -51,6 +51,14 @@
                                 href="https://documenter.getpostman.com/view/14948136/TzsZroCS"
                             >
                                 Postman - psychology-stats - D01
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://documenter.getpostman.com/view/14948136/TzzGJEJK"
+                            >
+                                Postman - psychology-stats - v2
                             </a>
                         </li>
                     </ul>
