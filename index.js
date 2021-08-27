@@ -25,7 +25,11 @@ psychology_stats_api_v1.register(app, BASE_API_PATH);
 
 var path = require("path");
 
+var cors = require("cors");
+
 app.use("/", express.static(path.join(__dirname, "public")));
+
+app.use(cors());
 
 app.listen(port, () => {
     console.log(`Server ready listening on ${port}`);
