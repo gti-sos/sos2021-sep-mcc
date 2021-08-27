@@ -16,6 +16,7 @@
         psychology_population: 0.0,
     };
 
+
     let countries = [];
     let years = [];
 

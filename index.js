@@ -12,8 +12,11 @@ var BASE_API_PATH = "/api/v1";
 var BASE_API_PATH_v2 = "/api/v2";
 
 var app = express();
+var cors = require("cors");
 app.use(bodyParser.json());
+var request = require("request");
 app.use(express.json());
+app.use(cors());
 
 // Versión v1    
 
@@ -25,11 +28,11 @@ psychology_stats_api_v1.register(app, BASE_API_PATH);
 
 var path = require("path");
 
-var cors = require("cors");
+
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
-app.use(cors());
+
 
 app.listen(port, () => {
     console.log(`Server ready listening on ${port}`);
