@@ -36,7 +36,28 @@ var path = require("path");
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
+//INTEGRACIONES DE COMPAÑEROS
+//INTEGRACIÓN 1 GRUPO 27
 
+var pathSuicidestats = '/api/v1/suicide-records';
+var apiServerHostSuicidestats = 'https://sos2021-27.herokuapp.com/';
+
+app.use(pathSuicidestats, function (req, res) {
+  var url = apiServerHostSuicidestats + req.url;
+  console.log('piped: ' + req.url);
+  req.pipe(request(url)).pipe(res);
+});
+
+//INTEGRACIÓN 2 GRUPO 23
+
+var pathDivorcestats = '/api/v1/mh-stats';
+var apiServerHostDivorcestats = 'https://sos2021-23.herokuapp.com/';
+
+app.use(pathDivorcestats, function (req, res) {
+  var url = apiServerHostDivorcestats + req.url;
+  console.log('piped: ' + req.url);
+  req.pipe(request(url)).pipe(res);
+});
 
 app.listen(port, () => {
     console.log(`Server ready listening on ${port}`);

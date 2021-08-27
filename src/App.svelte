@@ -7,6 +7,11 @@
 	import NotFound from "./NotFound.svelte";
 	import psychology_chart from "./front/psychology_stats_API/PsychologyChart.svelte";
 	import Integrations from "./Integrations.svelte";
+	import about from "./About.svelte";
+
+	// Integraciones
+	import Suicide from "./front/psychology_stats_API/Suicide.svelte";
+	import divorce from "./front/psychology_stats_API/Divorce.svelte";
 
 	const routes = {
 		"/": Home,
@@ -15,7 +20,11 @@
 		"/psychology-stats/:country/:year": edit_psychology_stats,
 		"/analytics": psychology_chart,
 		"/integrations": Integrations,
+		"/about": about,
+		"/integrations/suicide": Suicide,
+		"/integrations/divorce": divorce,
 		"*": NotFound,
+
 	};
 </script>
 

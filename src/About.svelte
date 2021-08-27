@@ -29,7 +29,7 @@
 
     </Nav>
 
-    <h1>Integraciones</h1>
+    <h1>Vídeo</h1>
 
 
     <h2>API</h2>
@@ -42,38 +42,13 @@
                 <CardBody>
                     <CardSubtitle />
                     <CardText
-                        >Datos estadísticos por comunidad autónoma en España sobre la media de personas que acuden al Psicólogo.</CardText
+                        > Enlace a Vídeo de la Interfaz de Psicología</CardText
                     >
-                    <a
-                        href="https://sos2021-sep-mcc.herokuapp.com/api/v2/psychology-stats"
-                    >
-                        <Button color="primary">API (v2)</Button></a
-                    >
+                   
                     <a href="/#/psychology-stats">
-                        <Button color="primary">Psicología</Button>
+                        <Button color="primary">Enlace a Vídeo</Button>
                     </a>
-                    <a
-                        href="https://documenter.getpostman.com/view/14948136/TzzGJEJK"
-                        ><Button color="info">Postman v2</Button></a
-                    >
-                    <a href="/#/integrations/suicide">
-                        <Button color="secondary">Integración 1</Button>
-                    </a>
-                    <a href="/#/integrations/divorce">
-                        <Button color="secondary">Integración 2</Button>
-                    </a>
-                    <a href="/#/integracion3">
-                        <Button color="secondary">Integración 3</Button>
-                    </a>
-                    <a href="/#/integracion4">
-                        <Button color="secondary">Integración 4</Button>
-                    </a>
-                    <a href="/#/integracionext1">
-                        <Button color="danger">Integración Externa 1</Button>
-                    </a>
-                    <a href="/#/integracionext2">
-                        <Button color="danger">Integración Externa 2</Button>
-                    </a>
+                    
                 </CardBody>
                 <CardFooter
                     >realizado por
