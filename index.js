@@ -18,13 +18,17 @@ var request = require("request");
 app.use(express.json());
 app.use(cors());
 
-// Versión v1    
+// Versión de v1, v2 e integration
 
 var psychology_stats_api = require("./src/back/psychology-stats/v2");
 var psychology_stats_api_v1 = require("./src/back/psychology-stats/v1");
+var psychology_stats_api_INT = require("./src/back/psychology-stats/integration");
+
+
 
 psychology_stats_api.register(app, BASE_API_PATH_v2);
 psychology_stats_api_v1.register(app, BASE_API_PATH);
+psychology_stats_api_INT.register(app, "/api/integration");
 
 var path = require("path");
 

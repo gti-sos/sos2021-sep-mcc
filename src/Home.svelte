@@ -76,13 +76,19 @@
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
 
                     <a href="/#/analytics">
-                        <button type="button" class="btn btn-warning">General</button>
+                        <button type="button" class="btn btn-secondary">General</button>
                     </a>
-                    <a href="/#/analytics/psychology-chart">
+                    <a href="/#/psychology-stats">
                         <button type="button" class="btn btn-secondary">Psicología</button>
                     </a>
                     <a href="/#/info">
-                        <button type="button" class="btn btn-danger">Información</button>
+                        <button type="button" class="btn btn-light">Información</button>
+                    </a>
+                    <a href="/#/integrations">
+                        <button type="button" class="btn btn-light">Integraciones</button>
+                    </a>
+                    <a href="/#/about">
+                        <button type="button" class="btn btn-dark">Vídeo</button>
                     </a>
                     
 

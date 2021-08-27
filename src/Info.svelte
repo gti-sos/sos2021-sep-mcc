@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <h1>sos2021-sep-mcc</h1>
+        <h1>Información</h1>
         <div style="background-color:cyan">
             <ul>
                 <li>
