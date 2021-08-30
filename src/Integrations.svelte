@@ -62,7 +62,7 @@
                     <a href="/#/integrations/rentals">
                         <Button color="secondary">Integración 2</Button>
                     </a>
-                    <a href="/#/integracion3">
+                    <a href="/#/integrations/obesity">
                         <Button color="secondary">Integración 3</Button>
                     </a>
                     <a href="/#/integracion4">

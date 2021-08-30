@@ -124,6 +124,9 @@
           <NavItem>
           <NavLink href="#/integrations">Integraciones</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="https://sos2021-27.herokuapp.com/#/suicide-records">Cargar Datos Iniciales</NavLink>
+            </NavItem>
           </Nav>          
           
       <h3>Uso de la API de Suicidios</h3>

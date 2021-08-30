@@ -59,6 +59,18 @@ app.use(pathDivorcestats, function (req, res) {
   req.pipe(request(url)).pipe(res);
 });
 
+//INTEGRACIÓN 3 GRUPO 10
+
+var pathDivorcestats = '/api/v2/obesity-stats';
+var apiServerHostDivorcestats = 'https://sos2021-10.herokuapp.com/';
+
+app.use(pathDivorcestats, function (req, res) {
+  var url = apiServerHostDivorcestats + req.url;
+  console.log('piped: ' + req.url);
+  req.pipe(request(url)).pipe(res);
+});
+
+
 app.listen(port, () => {
     console.log(`Server ready listening on ${port}`);
 });

@@ -121,6 +121,9 @@
     <NavItem>
     <NavLink href="#/integrations">Integraciones</NavLink>
     </NavItem>
+    <NavItem>
+      <NavLink href="https://sos2021-07.herokuapp.com/#/rentals">Cargar Datos Iniciales</NavLink>
+      </NavItem>
     </Nav>      
 
 

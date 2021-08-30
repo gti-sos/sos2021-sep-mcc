@@ -12,6 +12,7 @@
 	// Integraciones
 	import Suicide from "./front/psychology_stats_API/Suicide.svelte";
 	import rentals from "./front/psychology_stats_API/Rentals.svelte";
+	import obesity from "./front/psychology_stats_API/Obesity.svelte";
 
 	const routes = {
 		"/": Home,
@@ -23,6 +24,7 @@
 		"/about": about,
 		"/integrations/suicide": Suicide,
 		"/integrations/rentals": rentals,
+		"/integrations/obesity": obesity,
 		"*": NotFound,
 
 	};
