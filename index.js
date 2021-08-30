@@ -48,10 +48,10 @@ app.use(pathSuicidestats, function (req, res) {
   req.pipe(request(url)).pipe(res);
 });
 
-//INTEGRACIÓN 2 GRUPO 23
+//INTEGRACIÓN 2 GRUPO 07
 
-var pathDivorcestats = '/api/v1/mh-stats';
-var apiServerHostDivorcestats = 'https://sos2021-23.herokuapp.com/';
+var pathDivorcestats = '/api/v1/rentals';
+var apiServerHostDivorcestats = 'https://sos2021-07.herokuapp.com/';
 
 app.use(pathDivorcestats, function (req, res) {
   var url = apiServerHostDivorcestats + req.url;

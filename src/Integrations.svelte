@@ -59,7 +59,7 @@
                     <a href="/#/integrations/suicide">
                         <Button color="secondary">Integración 1</Button>
                     </a>
-                    <a href="/#/integrations/divorce">
+                    <a href="/#/integrations/rentals">
                         <Button color="secondary">Integración 2</Button>
                     </a>
                     <a href="/#/integracion3">
