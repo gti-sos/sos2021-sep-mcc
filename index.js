@@ -69,6 +69,18 @@ app.use(pathObesitystats, function (req, res) {
   console.log('piped: ' + req.url);
   req.pipe(request(url)).pipe(res);
 });
+//INTEGRACIÓN 4 GRUPO 27
+
+var pathGamesstats = '/api/v2/azar-games-and-bet-activities';
+var apiServerHostGamesstats = 'https://sos2021-27.herokuapp.com/';
+
+app.use(pathGamesstats, function (req, res) {
+  var url = apiServerHostGamesstats + req.url;
+  console.log('piped: ' + req.url);
+  req.pipe(request(url)).pipe(res);
+});
+
+
 
 //INTEGRACIÓN EXTERNA 1 COVID
 

@@ -65,7 +65,7 @@
                     <a href="/#/integrations/obesity">
                         <Button color="secondary">Integración 3</Button>
                     </a>
-                    <a href="/#/integrations/4">
+                    <a href="/#/integrations/prueba">
                         <Button color="secondary">Integración 4</Button>
                     </a>
                     <a href="/#/integrations/covid">
