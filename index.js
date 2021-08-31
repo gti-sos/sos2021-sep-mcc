@@ -61,11 +61,22 @@ app.use(pathDivorcestats, function (req, res) {
 
 //INTEGRACIÓN 3 GRUPO 10
 
-var pathDivorcestats = '/api/v2/obesity-stats';
-var apiServerHostDivorcestats = 'https://sos2021-10.herokuapp.com/';
+var pathObesitystats = '/api/v2/obesity-stats';
+var apiServerHostObesitystats = 'https://sos2021-10.herokuapp.com/';
 
-app.use(pathDivorcestats, function (req, res) {
-  var url = apiServerHostDivorcestats + req.url;
+app.use(pathObesitystats, function (req, res) {
+  var url = apiServerHostObesitystats + req.url;
+  console.log('piped: ' + req.url);
+  req.pipe(request(url)).pipe(res);
+});
+
+//INTEGRACIÓN EXTERNA 1 FERIA
+
+var pathFeriastats = '/v3/covid-19/jhucsse/counties';
+var apiServerHostFeriastats = 'https://disease.sh/';
+
+app.use(pathFeriastats, function (req, res) {
+  var url = apiServerHostFeriastats + req.url;
   console.log('piped: ' + req.url);
   req.pipe(request(url)).pipe(res);
 });

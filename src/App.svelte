@@ -13,6 +13,7 @@
 	import Suicide from "./front/psychology_stats_API/Suicide.svelte";
 	import rentals from "./front/psychology_stats_API/Rentals.svelte";
 	import obesity from "./front/psychology_stats_API/Obesity.svelte";
+	import covid from "./front/psychology_stats_API/Covid.svelte";
 
 	const routes = {
 		"/": Home,
@@ -25,6 +26,7 @@
 		"/integrations/suicide": Suicide,
 		"/integrations/rentals": rentals,
 		"/integrations/obesity": obesity,
+		"/integrations/covid": covid,
 		"*": NotFound,
 
 	};

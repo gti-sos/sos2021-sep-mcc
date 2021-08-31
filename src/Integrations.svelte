@@ -68,7 +68,7 @@
                     <a href="/#/integracion4">
                         <Button color="secondary">Integración 4</Button>
                     </a>
-                    <a href="/#/integracionext1">
+                    <a href="/#/integrations/covid">
                         <Button color="danger">Integración Externa 1</Button>
                     </a>
                     <a href="/#/integracionext2">
