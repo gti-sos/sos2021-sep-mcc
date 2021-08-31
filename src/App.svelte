@@ -14,6 +14,8 @@
 	import rentals from "./front/psychology_stats_API/Rentals.svelte";
 	import obesity from "./front/psychology_stats_API/Obesity.svelte";
 	import covid from "./front/psychology_stats_API/Covid.svelte";
+	import region from "./front/psychology_stats_API/Region.svelte";
+	
 
 	const routes = {
 		"/": Home,
@@ -27,6 +29,7 @@
 		"/integrations/rentals": rentals,
 		"/integrations/obesity": obesity,
 		"/integrations/covid": covid,
+		"/integrations/region": region,
 		"*": NotFound,
 
 	};

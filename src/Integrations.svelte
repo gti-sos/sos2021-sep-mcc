@@ -65,13 +65,13 @@
                     <a href="/#/integrations/obesity">
                         <Button color="secondary">Integración 3</Button>
                     </a>
-                    <a href="/#/integracion4">
+                    <a href="/#/integrations/4">
                         <Button color="secondary">Integración 4</Button>
                     </a>
                     <a href="/#/integrations/covid">
                         <Button color="danger">Integración Externa 1</Button>
                     </a>
-                    <a href="/#/integracionext2">
+                    <a href="/#/integrations/region">
                         <Button color="danger">Integración Externa 2</Button>
                     </a>
                 </CardBody>

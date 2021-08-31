@@ -70,17 +70,27 @@ app.use(pathObesitystats, function (req, res) {
   req.pipe(request(url)).pipe(res);
 });
 
-//INTEGRACIÓN EXTERNA 1 FERIA
+//INTEGRACIÓN EXTERNA 1 COVID
 
-var pathFeriastats = '/v3/covid-19/jhucsse/counties';
-var apiServerHostFeriastats = 'https://disease.sh/';
+var pathCovidstats = '/v3/covid-19/jhucsse/counties';
+var apiServerHostCovidstats = 'https://disease.sh/';
 
-app.use(pathFeriastats, function (req, res) {
-  var url = apiServerHostFeriastats + req.url;
+app.use(pathCovidstats, function (req, res) {
+  var url = apiServerHostCovidstats + req.url;
   console.log('piped: ' + req.url);
   req.pipe(request(url)).pipe(res);
 });
 
+//INTEGRACIÓN EXTERNA 2 REGION
+
+var pathRegionstats = '/rest/v2/region/europe';
+var apiServerHostRegionstats = 'https://restcountries.eu/rest/v2/region/europe';
+
+app.use(pathRegionstats, function (req, res) {
+  var url = apiServerHostRegionstats + req.url;
+  console.log('piped: ' + req.url);
+  req.pipe(request(url)).pipe(res);
+});
 
 app.listen(port, () => {
     console.log(`Server ready listening on ${port}`);
