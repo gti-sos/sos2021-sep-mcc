@@ -84,7 +84,7 @@ app.use(pathCovidstats, function (req, res) {
 //INTEGRACIÓN EXTERNA 2 REGION
 
 var pathRegionstats = '/rest/v2/region/europe';
-var apiServerHostRegionstats = 'https://restcountries.eu/rest/v2/region/europe';
+var apiServerHostRegionstats = 'https://restcountries.eu';
 
 app.use(pathRegionstats, function (req, res) {
   var url = apiServerHostRegionstats + req.url;
