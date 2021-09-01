@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install &
-      - run: npm run build
       - run: npx newman tests/psychology_stats_integration.json
       - run: npx newman tests/psychology_stats_integration_D01.json
       - run: npx newman tests/psychology_stats_integration_v2.json
