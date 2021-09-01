@@ -263,6 +263,7 @@
                 <tr>
                     <td>
                         <Input
+                            id="country"
                             type="text"
                             placeholder="Introduzca un país"
                             bind:value={newPsychology.country}
@@ -270,6 +271,7 @@
                     >
                     <td>
                         <Input
+                            id="year"
                             type="number"
                             placeholder="Introduzca un año"
                             bind:value={newPsychology.year}
@@ -277,6 +279,7 @@
                     >
                     <td>
                         <Input
+                            id="psychology_men"
                             type="number"
                             placeholder="Sólo caracteres numéricos"
                             step="1"
@@ -286,6 +289,7 @@
                     </td>
                     <td>
                         <Input
+                            id="psychology_women"
                             type="number"
                             placeholder="Sólo caracteres numéricos"
                             step="1"
@@ -295,6 +299,7 @@
                     >
                     <td>
                         <Input
+                            id="psychology_population"
                             type="number"
                             placeholder="Sólo caracteres numéricos"
                             step="1"
@@ -304,6 +309,7 @@
                     >
                     <td>
                         <Button
+                            id="addPsychology"
                             outline
                             color="btn btn-primary"
                             on:click={insertpsychology}
