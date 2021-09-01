@@ -24,7 +24,7 @@
         </NavItem>
 
         <NavItem>
-                <NavLink href="/info">Info</NavLink>
+                <NavLink href="/#/info">Info</NavLink>
         </NavItem>
 
     </Nav>
