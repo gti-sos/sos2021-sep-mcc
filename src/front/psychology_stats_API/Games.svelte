@@ -25,8 +25,8 @@
         psicologia_mujer = myData.map((myData)=> parseFloat(myData.psychology_women));
         
         pais2 = dataG2.map((dataG2)=> dataG2.province);
-        bingo = dataG2.map((dataG2)=> dataG2.catering_bingo_machine.toString());
-        loteria = dataG2.map((dataG2)=> dataG2.lottery_engagement.toString());
+        bingo = dataG2.map((dataG2)=> parseInt(dataG2.catering_bingo_machine));
+        loteria = dataG2.map((dataG2)=> parseInt(dataG2.lottery_engagement));
         
         dataG2.forEach((e) => {
 
@@ -36,13 +36,13 @@
         loteria.push(e.lottery_engagement);
         });
 
-        myData.forEach((f) => {
+      /*  myData.forEach((f) => {
 
           
     pais.push(f.country);
     psicologia_mujer.push(f.psychology_women);
     psicologia_hombre.push(f.psychology_men);
-});
+});*/
         
     
         console.log(pais);
@@ -55,20 +55,20 @@
         var trace1 = {
         
         x: pais2,
-        y: bingo,
+        y: parseInt(bingo),
         mode: 'markers',
         type: 'scatter',
-        name: 'Datos de psicología ',
-        text: pais2,
+        name: 'Datos de juego de azar',
+        text: parseInt(loteria),
         marker: { size: 12 }
         };
         var trace2 = {
         x: pais2,
-        y: loteria,
+        y: psicologia_hombre,
         mode: 'markers',
         type: 'scatter',
-        name: 'Datos de juegos de azar',
-        text: pais2,
+        name: 'Datos de psicología',
+        text: psicologia_mujer,
         marker: { size: 12 }
         };
         var data = [ trace1, trace2];

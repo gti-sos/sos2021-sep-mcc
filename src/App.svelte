@@ -15,7 +15,7 @@
 	import obesity from "./front/psychology_stats_API/Obesity.svelte";
 	import covid from "./front/psychology_stats_API/Covid.svelte";
 	import region from "./front/psychology_stats_API/Region.svelte";
-	import prueba from "./front/psychology_stats_API/Prueba.svelte";
+	import games from "./front/psychology_stats_API/Games.svelte";
 	
 
 	const routes = {
@@ -31,7 +31,7 @@
 		"/integrations/obesity": obesity,
 		"/integrations/covid": covid,
 		"/integrations/region": region,
-		"/integrations/prueba": prueba,
+		"/integrations/games": games,
 		"*": NotFound,
 
 	};
