@@ -45,7 +45,7 @@
                         > Enlace a Vídeo de la Interfaz de Psicología</CardText
                     >
                    
-                    <a href="/#/psychology-stats">
+                    <a href="https://youtu.be/W0hUpPCqDbM">
                         <Button color="primary">Enlace a Vídeo</Button>
                     </a>
                     
